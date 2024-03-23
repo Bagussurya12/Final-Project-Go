@@ -1,189 +1,192 @@
 # Final Project 2 - MyGram App
 
-Final Projek Kelas Kominfo. Membuat aplikasi MyGram
+Welcome to MyGram, the social media app where you can share your photos, connect with friends, and engage with comments!
 
-# Swagger UI
+![MyGram Logo](assets/mygram_logo.png)
 
-## Comment
+## Swagger UI
 
-![](assets/comments.png)
+### Comment
 
-## Social Media and Photos
+![Comments](assets/comments.png)
 
-![](assets/photos_and_social_media.png)
+### Social Media and Photos
 
-## Users
+![Social Media and Photos](assets/photos_and_social_media.png)
 
-![](assets/users.png)
+### Users
 
-<!-- Documentation -->
+![Users](assets/users.png)
 
-# MyGram API Documentation
+## MyGram API Documentation
 
-## Users
+### Users
 
-    ### Register
+#### Register
 
-    - **Endpoint:** {{url}}/users/register
-    - **Method:** POST
-    - **Request Body:**
-    ```json
-    {
-        "email": "Bagus.suryaaws@gmail.com",
-        "password": "SuperSecret",
-        "username": "Bagus.surya",
-        "age": 22
-    }
-    ```
+- **Endpoint:** {{url}}/users/register
+- **Method:** POST
+- **Request Body:**
+  ```json
+  {
+    "email": "Bagus.suryaaws@gmail.com",
+    "password": "SuperSecret",
+    "username": "Bagus.surya",
+    "age": 22
+  }
+  ```
 
-    ### Login
+#### Login
 
-    - **Endpoint:** {{url}}/users/login
-    - **Method:** POST
-    - **Request Body:**
-    ```json
-    {
-        "email": "Bagus.suryaaws@gmail.com",
-        "password": "SuperSecret"
-    }
-    ```
+- **Endpoint:** {{url}}/users/login
+- **Method:** POST
+- **Request Body:**
+  ```json
+  {
+    "email": "Bagus.suryaaws@gmail.com",
+    "password": "SuperSecret"
+  }
+  ```
 
-    ### Update
+#### Update
 
-    - **Endpoint:** {{url}}/users
-    - **Method:** PUT
-    - **Request Headers:** Authorization (Bearer token string)
-    - **Request Body:**
-    ```json
-    {
-        "email": "Bagus.suryaaws@gmail.com",
-        "password": "SuperSecret"
-    }
-    ```
+- **Endpoint:** {{url}}/users
+- **Method:** PUT
+- **Request Headers:** Authorization (Bearer token string)
+- **Request Body:**
+  ```json
+  {
+    "email": "Bagus.suryaaws@gmail.com",
+    "password": "SuperSecret"
+  }
+  ```
 
-    ### Delete
+#### Delete
 
-    - **Endpoint:** {{url}}/users
-    - **Method:** DELETE
-    - **Request Headers:** Authorization (Bearer token string)
+- **Endpoint:** {{url}}/users
+- **Method:** DELETE
+- **Request Headers:** Authorization (Bearer token string)
 
-## Photos
+### Photos
 
-    ### POST
+#### POST
 
-    - **Endpoint:** {{url}}/Photos
-    - **Method:** POST
-    - **Request Headers:** Authorization (Bearer token string)
-    - **Request Body:**
-    ```json
-    {
-        "title": "Photo Github",
-        "caption": "My Profile Photo On Github",
-        "photo_url": "https://avatars.githubusercontent.com/u/88541910?v=4"
-    }
-    ```
+- **Endpoint:** {{url}}/Photos
+- **Method:** POST
+- **Request Headers:** Authorization (Bearer token string)
+- **Request Body:**
+  ```json
+  {
+    "title": "Photo Github",
+    "caption": "My Profile Photo On Github",
+    "photo_url": "https://avatars.githubusercontent.com/u/88541910?v=4"
+  }
+  ```
 
-    ### Get
+#### Get
 
-    - **Endpoint:** {{url}}/Photos
-    - **Method:** GET
-    - **Request Headers:** Authorization (Bearer token string)
+- **Endpoint:** {{url}}/Photos
+- **Method:** GET
+- **Request Headers:** Authorization (Bearer token string)
 
-    ### Update
+#### Update
 
-    - **Endpoint:** {{url}}/Photos
-    - **Method:** PUT
-    - **Request Headers:** Authorization (Bearer token string)
-    - **Request Body:**
-    ```json
-    {
-        "title": "Github Profile Photo",
-        "caption": "Github Profile",
-        "photo_url": "https://avatars.githubusercontent.com/u/88541910?v=4"
-    }
-    ```
+- **Endpoint:** {{url}}/Photos
+- **Method:** PUT
+- **Request Headers:** Authorization (Bearer token string)
+- **Request Body:**
+  ```json
+  {
+    "title": "Github Profile Photo",
+    "caption": "Github Profile",
+    "photo_url": "https://avatars.githubusercontent.com/u/88541910?v=4"
+  }
+  ```
 
-    ### Delete
+#### Delete
 
-    - **Endpoint:** {{url}}/Photos/{id_photos}
-    - **Method:** DELETE
-    - **Request Headers:** Authorization (Bearer token string)
+- **Endpoint:** {{url}}/Photos/{id_photos}
+- **Method:** DELETE
+- **Request Headers:** Authorization (Bearer token string)
 
-## Social Media (Continued)
+### Social Media
 
-    ### POST
+#### POST
 
-    - **Endpoint:** {{url}}/Socialmedias
-    - **Method:** POST
-    - **Request Headers:** Authorization (Bearer token string)
-    - **Request Body:**
-    ```json
-    {
-         "name" : "Linkedin",
-          "social_media_url" : "https://www.linkedin.com/in/bagussuryaindrajati/"
-    }
-    ```
+- **Endpoint:** {{url}}/Socialmedias
+- **Method:** POST
+- **Request Headers:** Authorization (Bearer token string)
+- **Request Body:**
+  ```json
+  {
+    "name": "Linkedin",
+    "social_media_url": "https://www.linkedin.com/in/bagussuryaindrajati/"
+  }
+  ```
 
-    ### GET
+#### GET
 
-    - **Endpoint:** {{url}}/Socialmedias
-    - **Method:** GET
-    - **Request Headers:** Authorization (Bearer token string)
+- **Endpoint:** {{url}}/Socialmedias
+- **Method:** GET
+- **Request Headers:** Authorization (Bearer token string)
 
+#### PUT
 
-    ### PUT
+- **Endpoint:** {{url}}/Socialmedias/{id_socialmedias}
+- **Method:** GET
+- **Request Headers:** Authorization (Bearer token string)
+- **Request Body:**
+  ```json
+  {
+    "name": "Github.com",
+    "social_media_url": "https://github.com/Bagussurya12"
+  }
+  ```
 
-    - **Endpoint:** {{url}}/Socialmedias/{id_socialmedias}
-    - **Method:** GET
-    - **Request Headers:** Authorization (Bearer token string)
-    - **Request Body:**
-    ```json
-        {
-            "name" : "Github.com",
-            "social_media_url" : "https://github.com/Bagussurya12"
-        }
-    ```
+#### DELETE
 
-    ### DELETE
+- **Endpoint:** {{url}}/Socialmedias/{id_socialmedias}
+- **Method:** DELETE
+- **Request Headers:** Authorization (Bearer token string)
 
-    - **Endpoint:** {{url}}/Socialmedias/{id_socialmedias}
-    - **Method:** DELETE
-    - **Request Headers:** Authorization (Bearer token string)
+### Comment
 
-## Comment
+#### POST
 
-    ### POST
-    - **Endpoint:** {{url}}/comments
-    - **Method:** POST
-    - **Request Headers:** Authorization (Bearer token string)
-    - **Request Body:**
-    ```json
-        {
-            "message" : "Take Your Moment",
-            "photo_id" : 2
-        }
-    ```
+- **Endpoint:** {{url}}/comments
+- **Method:** POST
+- **Request Headers:** Authorization (Bearer token string)
+- **Request Body:**
+  ```json
+  {
+    "message": "Take Your Moment",
+    "photo_id": 2
+  }
+  ```
 
-    ### GET
-    - **Endpoint:** {{url}}/comments
-    - **Method:** GET
-    - **Request Headers:** Authorization (Bearer token string)
+#### GET
 
-    ### PUT
-    - **Endpoint:** {{url}}/comments/{ID_COMENTS}
-    - **Method:** PUT
-    - **Request Headers:** Authorization (Bearer token string)
-    - **Request Body:**
-    ```json
-        {
-            "message" : "Foto Yang Baik Untuk Diabadikan"
-        }
-    ```
+- **Endpoint:** {{url}}/comments
+- **Method:** GET
+- **Request Headers:** Authorization (Bearer token string)
 
-    ### DELETE
-    - **Endpoint:** {{url}}/comments/{ID_COMENTS}
-    - **Method:** DELETE
-    - **Request Headers:** Authorization (Bearer token string)
+#### PUT
+
+- **Endpoint:** {{url}}/comments/{ID_COMENTS}
+- **Method:** PUT
+- **Request Headers:** Authorization (Bearer token string)
+- **Request Body:**
+  ```json
+  {
+    "message": "Foto Yang Baik Untuk Diabadikan"
+  }
+  ```
+
+#### DELETE
+
+- **Endpoint:** {{url}}/comments/{ID_COMENTS}
+- **Method:** DELETE
+- **Request Headers:** Authorization (Bearer token string)
 
 ### Note:
 
