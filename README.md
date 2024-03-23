@@ -2,7 +2,15 @@
 
 Welcome to MyGram, the social media app where you can share your photos, connect with friends, and engage with comments!
 
-![MyGram Logo](assets/mygram_logo.png)
+<!-- ![MyGram Logo](assets/mygram_logo.png) -->
+
+###Runing Code
+
+- ** Open Your Terminal **
+- ** Jalankan Perintah Dibawah ini: **
+  ```
+      go run main.go
+  ```
 
 ## Swagger UI
 
@@ -192,3 +200,4 @@ Welcome to MyGram, the social media app where you can share your photos, connect
 
 - Replace `{{url}}` with the actual base URL of your API.
 - Ensure to include authentication tokens in the headers for authorized endpoints.
+- Dont Forget For Configuration on .env
