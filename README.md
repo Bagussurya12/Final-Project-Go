@@ -37,9 +37,9 @@ Welcome to MyGram, the social media app where you can share your photos, connect
 - **Request Body:**
   ```json
   {
-    "email": "Bagus.suryaaws@gmail.com",
+    "email": "example@gmail.com",
     "password": "SuperSecret",
-    "username": "Bagus.surya",
+    "username": "example",
     "age": 22
   }
   ```
@@ -51,7 +51,7 @@ Welcome to MyGram, the social media app where you can share your photos, connect
 - **Request Body:**
   ```json
   {
-    "email": "Bagus.suryaaws@gmail.com",
+    "email": "example@gmail.com",
     "password": "SuperSecret"
   }
   ```
@@ -64,7 +64,7 @@ Welcome to MyGram, the social media app where you can share your photos, connect
 - **Request Body:**
   ```json
   {
-    "email": "Bagus.suryaaws@gmail.com",
+    "email": "example@gmail.com",
     "password": "SuperSecret"
   }
   ```
